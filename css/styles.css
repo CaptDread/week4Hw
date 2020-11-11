@@ -1,0 +1,189 @@
+*{
+    box-sizing: border-box; /*this makes it so i dont need to calculate the padding of divs.*/
+    text-decoration: none; /*so all the links on the page are no longer underlined*/
+} 
+
+html, body{
+    font-family: 'Varela Round', sans-serif;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    line-height: 3; /*this adds spacing between lines!*/
+}
+
+h1 a{
+    font-size: 1.7em;
+    font-weight: 600;
+    color: #000;
+}
+
+#mapid{
+    padding: 13em 13.5em;
+    position: relative;
+    margin-bottom: -23em;
+    z-index: 0;
+}
+
+nav a{
+    color: lightseagreen;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.hero{
+    text-align: center; /*text align center works on typically all inline elements.*/
+    background-color: lightseagreen;
+    color: white;
+    font-weight: 300;
+}
+.hero h2{
+    font-size: 1.3em;
+    font-weight: 900;
+    margin: 20px 0px;
+}
+
+.hero p{
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+
+
+.hero img{
+    width: 190px;
+    margin: 40px;
+}
+
+.col{
+    background-color: #d9e4ea;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.col h3{
+    color: darkslateblue;
+    font-size: 1.5em;
+    font-weight: 600;
+    margin: 10px 0px;
+}
+
+.col p{
+    margin: 20px 0px;
+    font-size: .90em;
+    line-height: 1.5;
+}
+
+.button{
+    position: relative;
+    padding: 10px 13px;
+    background-color: lightseagreen;
+    color: white;
+    border-radius: .40em;
+}
+
+footer{
+    background-color:  #d9e4ea;
+    height: 4.2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+
+@media all and (min-width: 768px){
+    
+    #mapid{
+        margin-bottom: -32em;
+    }
+
+    ul{
+        display: flex;
+        justify-content: center;
+    }
+
+    nav a{
+        margin: 0px 20px;
+    }
+
+
+    .hero h2{
+        font-size: 2.2em;
+    }
+
+    .hero p{
+        font-size: 1.3em;
+        padding-bottom: 50px;
+    }
+    
+    .row{
+        display: flex;
+        height: 42em;
+        padding: 0px 3em;
+    }
+
+    .col{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        width: 25.33%;
+        height: 90%;
+        margin: 5px 15px;
+    }
+
+    .col h3{
+        font-size: 1.1em;
+        margin: -5px 0px;
+    }
+
+    .col p{
+        margin-bottom: 5px;
+        font-size: .85em;
+    }
+    
+    .col a{
+        margin-top: auto;   /*this moves all the A elements in any col div to the bottom of that div container.*/
+    }
+    
+    .button{
+        width: 7em;
+        padding: 8px 10px;
+    }
+}
+
+@media all and (min-width: 1080px){
+    header{
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0px 12em;
+    }
+
+    h1 a{
+        font-size: 1.2em;
+    }
+
+    .row{
+        padding: 0px 10em;
+    }
+
+    .col h3{
+        font-size: 1.8em;
+    }
+
+    .col p{
+        font-size: .88em;
+        line-height: 1.5;
+    }
+
+}
+
+@media all and (min-width: 1342px){
+    .col p{
+        font-size: 1em;
+        line-height: 1.8;
+    }
+}
