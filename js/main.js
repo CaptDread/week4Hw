@@ -5,7 +5,7 @@ let icuCunt = document.querySelector('.map')
 
 let waypoint = new Waypoint({
     element: document.getElementById('basic-waypoint'),
-    handler: function(down) {
+    handler: function(direction) {
         console.log('first waypoint triggered')
         icuCunt.setAttribute('id', 'mapid')
         var mymap = L.map('mapid').setView([51.505, -0.09], 13);
